@@ -6,7 +6,7 @@ struct Livro{
     string autor;
     string titulo;
     string edit;
-    int pg;                                                                     //número de pagnas
+    int pg;                                                                     //nÃºmero de pagnas
     int ano;
 
     void cadastro(string stautor,string sttitulo,string stedit,int stpg,int stano){
@@ -20,8 +20,8 @@ struct Livro{
         cout<<"AUTOR................"<<autor<<"\n";
         cout<<"TITULO..............."<<titulo<<"\n";
         cout<<"editora.............."<<edit<<"\n";
-        cout<<"NÚMERO DE PÁGNAS....."<<pg<<"\n";
-        cout<<"ANO DE LANÇAMENTO...."<<ano<<"\n\n";
+        cout<<"NÃšMERO DE PÃGNAS....."<<pg<<"\n";
+        cout<<"ANO DE LANÃ‡AMENTO...."<<ano<<"\n\n";
         cout<<"==========================================\n";
     }
 };
@@ -35,7 +35,7 @@ int main()
     
     Livro livro1,livro2;
    
-   livro1.cadastro("Andrzej Sapkowski","The Witcher - O Último Desejo","WMF MARTINS FONTES",320,1993);
+   livro1.cadastro("Andrzej Sapkowski","The Witcher - O Ãšltimo Desejo","WMF MARTINS FONTES",320,1993);
    livro2.cadastro("Andrzej Sapkowski","The Witcher - A espada do destino","WMF MARTINS FONTES",380,1992);
    
    //livro1.ver();
@@ -48,19 +48,19 @@ int main()
    
    
    do{
-    do{                                                                         //faça enquanto 
+    do{                                                                         //faÃ§a enquanto 
     cout<<"\n====================================================";
     cout<<"\n*******  MENU PRINCIPAL  *******";
     cout<<"\n====================================================";
-    cout<<"\nDIGITE O NÚMERO DO PROCESSO DESEJADO";
+    cout<<"\nDIGITE O NÃšMERO DO PROCESSO DESEJADO";
     cout<<"\n1 - ADICIONAR LIVRO";
-    cout<<"\n2 - CONSULTAR INVENTÁRIO ";
-    cout<<"\n3 - PENDÊNCIAS";
+    cout<<"\n2 - CONSULTAR INVENTÃRIO ";
+    cout<<"\n3 - PENDÃŠNCIAS";
     cout<<"\n4 - TERMOS DA BIBLIOTECA\n";
 	cout<<"====================================================\n";
     cin>>p;
     system("cls");
-    }while(p<=0 || p>=5);                                                        //condição
+    }while(p<=0 || p>=5);                                                        //condiÃ§Ã£o
     
     
 	
@@ -84,34 +84,34 @@ int main()
         cin>>autor;
         cout<<"EDITORA\n\n";
         cin>>edit;
-    	cout<<"\nDIGITE 1 PARA ADICIONAR OUTRO LIVRO E QUALQUER NÚMERO PARA RETORNAR AO MENU\n";
+    	cout<<"\nDIGITE 1 PARA ADICIONAR OUTRO LIVRO E QUALQUER NÃšMERO PARA RETORNAR AO MENU\n";
     	cin>>i;}}while(i==1);
 			
 	system("cls");
 	
     
 	if(p==2){
-        cout<<"\n** INVENTÁRIO **\n"<<"\n";
+        cout<<"\n** INVENTÃRIO **\n"<<"\n";
 		  livro1.ver();
    		  livro2.ver();
    
-		cout<<"\nDIGITE QUALQUER NÚMERO RETORNAR AO MENU\n";
+		cout<<"\nDIGITE QUALQUER NÃšMERO RETORNAR AO MENU\n";
     	cin>>i;
 		system("cls");}
     
 	if(p==3){
-        cout<<"\n** PENDÊNCIAS **";
+        cout<<"\n** PENDÃŠNCIAS **";
 		
 		
 		
-		cout<<"\nDIGITE QUALQUER NÚMERO RETORNAR AO MENU\n";
+		cout<<"\nDIGITE QUALQUER NÃšMERO RETORNAR AO MENU\n";
     	cin>>i;}
 		system("cls");
 
     if(p==4){
     	cout<<"** TERMOS **";
 	
-		cout<<"\nDIGITE QUALQUER NÚMERO RETORNAR AO MENU\n";
+		cout<<"\nDIGITE QUALQUER NÃšMERO RETORNAR AO MENU\n";
     	cin>>i;}
 		system("cls");
 	}while(i!=784654);
